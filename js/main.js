@@ -49,6 +49,18 @@ gProjects = [
     publishedAt: '2021',
     labels: 'Matrixes and DOM manipulation',
   },
+
+  {
+    id: 'Pacman',
+    name: 'Pacman',
+    title: 'pacman 2021 version',
+    desc:
+      'My first geam at JS',
+    url: 'https://eransevil.github.io/pacmen/index.html',
+    code: 'https://github.com/eransevil/pacmen',
+    publishedAt: 2021,
+    labels: 'HTML and JS',
+  },
 ];
 
 function renderPortFolio() {
