@@ -6,16 +6,6 @@ function onInit() {
 
 gProjects = [
   {
-    id: 'minesweeper',
-    name: 'Mine-sweeper',
-    title: 'Mine sweeper',
-    desc: 'My upgrade version for the mythological game - Mine sweeper',
-    url: 'https://eransevil.github.io/sprint1/',
-    code: 'https://github.com/eransevil/sprint1',
-    publishedAt: '2021',
-    labels: 'Matrixes and DOM manipulation',
-  },
-  {
     id: 'robofriends',
     name: 'RoboFriends',
     title: 'Robot Friends',
@@ -39,6 +29,17 @@ gProjects = [
   },
 
   {
+    id: 'BookShop',
+    name: 'BookShop',
+    title: 'Book Shop',
+    desc: 'Simple CRUD app that can create, read, update and delete data',
+    url: 'https://eransevil.github.io/BooksShop/',
+    code: 'https://github.com/eransevil/BooksShop',
+    publishedAt: '2021',
+    labels: 'MVC',
+  },
+
+  {
     id: 'minesweeper',
     name: 'Mine-sweeper',
     title: 'Mine sweeper',
@@ -48,8 +49,6 @@ gProjects = [
     publishedAt: '2021',
     labels: 'Matrixes and DOM manipulation',
   },
-
-  
 ];
 
 function renderPortFolio() {
@@ -103,17 +102,18 @@ function renderModal(projectId) {
     '.site-code'
   ).innerHTML = ` <a class="site-link link to code item-intro text-muted" href="${project.code}" target="_blank">
    click here to view to site code`;
-    document.querySelector('.date').innerHTML = `Date: ${project.publishedAt}`
-    document.querySelector('.lable').innerHTML = `Lables: ${project.labels}`
+  document.querySelector('.date').innerHTML = `Date: ${project.publishedAt}`;
+  document.querySelector('.lable').innerHTML = `Lables: ${project.labels}`;
 }
 
+function navToEmail(ev) {
+  ev.preventDefault();
 
-function navToEmail(ev){
-    ev.preventDefault();
-
-    const EMAIL = document.querySelector('input[name=SUBJECT]').value;
-    const SUBJECT = document.querySelector('input[name=SUBJECT]').value;
-    const BODY = document.querySelector('textarea[name=BODY]').value;
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=eransevil2@gmail.com&su=${SUBJECT}&body=${BODY}`,"_blank")
-
+  const EMAIL = document.querySelector('input[name=SUBJECT]').value;
+  const SUBJECT = document.querySelector('input[name=SUBJECT]').value;
+  const BODY = document.querySelector('textarea[name=BODY]').value;
+  window.open(
+    `https://mail.google.com/mail/?view=cm&fs=1&to=eransevil2@gmail.com&su=${SUBJECT}&body=${BODY}`,
+    '_blank'
+  );
 }
