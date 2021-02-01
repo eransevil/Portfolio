@@ -10,7 +10,7 @@ gProjects = [
     name: 'RoboFriends',
     title: 'Robot Friends',
     desc:
-      'My first project at react, I focused on using API and using react components to create an interactive website',
+      'My first project at react, I focused on API and react components to create an interactive website',
     url: 'https://eransevil.github.io/RoboFriends/',
     code: 'https://github.com/eransevil/RoboFriends',
     publishedAt: 2020,
@@ -107,12 +107,12 @@ function renderModal(projectId) {
   document.querySelector(
     '.site-link'
   ).innerHTML = ` <a class="site-link link to code item-intro text-secondary " href="${project.url}" target="_blank">
-     click here to view to site
+     click here to view site
     </a>`;
   document.querySelector(
     '.site-code'
   ).innerHTML = ` <a class="site-link link to code item-intro text-secondary" href="${project.code}" target="_blank">
-   click here to view to site code`;
+   click here to view site code`;
   document.querySelector('.date').innerHTML = `Date: ${project.publishedAt}`;
   document.querySelector('.lable').innerHTML = `Lables: ${project.labels}`;
 }
