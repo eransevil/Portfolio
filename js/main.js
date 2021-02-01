@@ -17,7 +17,7 @@ gProjects = [
   },
   {
     id: 'robofriends',
-    name: 'LectureMe',
+    name: 'RoboFriends',
     title: 'Robot Friends',
     desc:
       'My first project at react, I focused on using API and using react components to create an interactive website',
