@@ -87,7 +87,6 @@ function renderModal(projectId) {
     return projectId === project.id;
   });
 
-  console.log('renderModal?');
   document.querySelector('.modal-body h2').innerHTML = project.title;
   document.querySelector(
     '.modal-body img'
@@ -95,12 +94,12 @@ function renderModal(projectId) {
   document.querySelector('.description').innerHTML = project.desc;
   document.querySelector(
     '.site-link'
-  ).innerHTML = ` <a class="site-link link to code item-intro text-muted" href="${project.url}" target="_blank">
+  ).innerHTML = ` <a class="site-link link to code item-intro text-secondary " href="${project.url}" target="_blank">
      click here to view to site
     </a>`;
   document.querySelector(
     '.site-code'
-  ).innerHTML = ` <a class="site-link link to code item-intro text-muted" href="${project.code}" target="_blank">
+  ).innerHTML = ` <a class="site-link link to code item-intro text-secondary" href="${project.code}" target="_blank">
    click here to view to site code`;
   document.querySelector('.date').innerHTML = `Date: ${project.publishedAt}`;
   document.querySelector('.lable').innerHTML = `Lables: ${project.labels}`;
@@ -109,7 +108,7 @@ function renderModal(projectId) {
 function navToEmail(ev) {
   ev.preventDefault();
 
-  const EMAIL = document.querySelector('input[name=SUBJECT]').value;
+  // const EMAIL = document.querySelector('input[name=SUBJECT]').value;
   const SUBJECT = document.querySelector('input[name=SUBJECT]').value;
   const BODY = document.querySelector('textarea[name=BODY]').value;
   window.open(
