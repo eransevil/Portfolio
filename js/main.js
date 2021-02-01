@@ -53,7 +53,7 @@ gProjects = [
   {
     id: 'Pacman',
     name: 'Pacman',
-    title: 'pacman 2021 version',
+    title: 'Pacman 2021 version',
     desc:
       'My first geam at JS',
     url: 'https://eransevil.github.io/pacmen/index.html',
