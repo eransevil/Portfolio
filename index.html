@@ -9,9 +9,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Coding Academy</title>
+    <title>Eran Sevil Portfolio</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom fonts for this template -->
@@ -52,7 +51,25 @@
     <aside class="offcanvas-aside badge bg-light text-dark">
       <!-- Contact -->
       <section id="contact">
-        <h4>Contact Me</h4>
+        <h4 class="mb-5">Contact Me</h4>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label"> My Email address</label>
+            <input type="email" class="form-control" name="EMAIL" placeholder="EranSevil2@gmail.com" disabled>
+          </div>
+
+          <div class="mb-3">
+            <label for="SUBJECT" class="form-label"> Subject</label>
+            <input type="text" class="form-control" name="SUBJECT">
+          </div>
+        
+          <div class="mb-3">
+            <label for="BODY" class="form-label"> Body</label>
+            <textarea class="form-control" name="BODY" rows="3"></textarea>
+          </div>
+         
+          <button onclick="navToEmail(event)" type="button" class="btn btn-primary">Submit</button>
+        </form>
       </section>
     </aside>
 
@@ -113,8 +130,8 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Specialities</h2>
-            <h3 class="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
+            <h3 class="section-subheading">
+             <a href="https://docs.google.com/document/d/1os051YnwmRZ4_7s49VYnYSQoKBIBfO7gIGYC1wsK_N4/edit?usp=sharing">Visit my CV </a> 
             </h3>
           </div>
         </div>
@@ -122,13 +139,11 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
+            <h4 class="service-heading">Front-End</h4>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
+              Build visible stuff, and make it look good. Well-spaced, readable, and breathable.
             </p>
           </div>
           <div class="col-md-4">
@@ -136,11 +151,9 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
+            <h4 class="service-heading">Version-Control</h4>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
+             Git/gitHub
             </p>
           </div>
           <div class="col-md-4">
@@ -148,11 +161,9 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Web Security</h4>
+            <h4 class="service-heading">Back-End</h4>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
+              Knowledge of server-side web application logic and integration of the work front-end developers do.
             </p>
           </div>
         </div>
@@ -171,7 +182,7 @@
           </div>
         </div>
         <div class="row portfolio-gallery">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <!-- <div class="col-md-4 col-sm-6 portfolio-item">
             <a
               class="portfolio-link"
               data-toggle="modal"
@@ -301,8 +312,8 @@
             <div class="portfolio-caption">
               <h4>Window</h4>
               <p class="text-muted">Photography</p>
-            </div>
-          </div>
+            </div> -->
+          </div> 
         </div>
       </div>
     </section>
@@ -380,20 +391,15 @@
           <div class="col-md-4 flex-align-center">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">More Me</a>
+                <a href="https://docs.google.com/document/d/18vX7ucuPaNEyldeTxr2oTx7yVq8crWOxjPNHUBoyUDk/edit?usp=sharing">More Me</a>
               </li>
-              <li class="list-inline-item">
-                <a href="#">Even More</a>
-              </li>
-            </ul>
+                  </ul>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
+    <!-- Modal -->
     <div
       class="portfolio-modal modal fade"
       id="portfolioModal1"
@@ -413,26 +419,22 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
+                  <h2></h2>
+                  <p class="site-link item-intro text-muted">
+                  </p>
+                  <p class="site-code item-intro text-muted">
                   </p>
                   <img
                     class="img-fluid d-block mx-auto"
                     src="img/portfolio/01-full.jpg"
                     alt=""
                   />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                  <p class="description">
+    
                   </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
+                    <li class="date text-muted"></li>
+                    <li class="lable text-muted"></li>
                   </ul>
                   <button
                     class="btn btn-primary"
@@ -450,289 +452,6 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/02-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fa fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal3"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/03-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fa fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal4"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/04-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fa fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/05-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fa fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal6"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2>Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="img/portfolio/06-full.jpg"
-                    alt=""
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fa fa-times"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->

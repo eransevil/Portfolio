@@ -9,10 +9,10 @@ gProjects = [
     id: 'minesweeper',
     name: 'Mine-sweeper',
     title: 'Mine sweeper',
-    desc: 'My upgraded version for the mythological game - Mine sweeper',
+    desc: 'My upgrade version for the mythological game - Mine sweeper',
     url: 'https://eransevil.github.io/sprint1/',
-    code: 'https://github.com/eransevil?tab=repositories',
-    publishedAt: 1448693940000,
+    code: 'https://github.com/eransevil/sprint1',
+    publishedAt: '2021',
     labels: 'Matrixes and DOM manipulation',
   },
   {
@@ -23,7 +23,7 @@ gProjects = [
       'My first project at react, I focused on using API and using react components to create an interactive website',
     url: 'https://eransevil.github.io/RoboFriends/',
     code: 'https://github.com/eransevil/RoboFriends',
-    publishedAt: 1448693940000,
+    publishedAt: 2020,
     labels: 'react.js and API',
   },
   {
@@ -32,18 +32,31 @@ gProjects = [
     title: 'LectureMe',
     desc:
       'The first project I built during my degree, in which I first combined HTML, CSS, and JS, The project simulates an app for inviting lecturers home on various topics',
-    url: 'https://eransevil.github.io/RoboFriends/',
-    code: 'https://github.com/eransevil/RoboFriends',
-    publishedAt: 1448693940000,
+    url: 'https://eransevil.github.io/LectureMe/',
+    code: 'https://github.com/eransevil/LectureMe',
+    publishedAt: 2019,
     labels: 'HTML, CSS and JS',
   },
+
+  {
+    id: 'minesweeper',
+    name: 'Mine-sweeper',
+    title: 'Mine sweeper',
+    desc: 'My upgrade version for the mythological game - Mine sweeper',
+    url: 'https://eransevil.github.io/sprint1/',
+    code: 'https://github.com/eransevil/sprint1',
+    publishedAt: '2021',
+    labels: 'Matrixes and DOM manipulation',
+  },
+
+  
 ];
 
 function renderPortFolio() {
   var strHTML = '';
   gProjects.forEach(function (project) {
     strHTML += `<div class="col-md-4 col-sm-6 portfolio-item">
-        <a
+        <a onclick="renderModal('${project.id}')"
           class="portfolio-link"
           data-toggle="modal"
           href="#portfolioModal1"
@@ -68,4 +81,39 @@ function renderPortFolio() {
 
   var elPortfolio = document.querySelector('.portfolio-gallery');
   elPortfolio.innerHTML = strHTML;
+}
+
+function renderModal(projectId) {
+  var project = gProjects.find(function (project) {
+    return projectId === project.id;
+  });
+
+  console.log('renderModal?');
+  document.querySelector('.modal-body h2').innerHTML = project.title;
+  document.querySelector(
+    '.modal-body img'
+  ).src = `img/portfolio/${project.name}.jpg`;
+  document.querySelector('.description').innerHTML = project.desc;
+  document.querySelector(
+    '.site-link'
+  ).innerHTML = ` <a class="site-link link to code item-intro text-muted" href="${project.url}" target="_blank">
+     click here to view to site
+    </a>`;
+  document.querySelector(
+    '.site-code'
+  ).innerHTML = ` <a class="site-link link to code item-intro text-muted" href="${project.code}" target="_blank">
+   click here to view to site code`;
+    document.querySelector('.date').innerHTML = `Date: ${project.publishedAt}`
+    document.querySelector('.lable').innerHTML = `Lables: ${project.labels}`
+}
+
+
+function navToEmail(ev){
+    ev.preventDefault();
+
+    const EMAIL = document.querySelector('input[name=SUBJECT]').value;
+    const SUBJECT = document.querySelector('input[name=SUBJECT]').value;
+    const BODY = document.querySelector('textarea[name=BODY]').value;
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=eransevil2@gmail.com&su=${SUBJECT}&body=${BODY}`,"_blank")
+
 }
